@@ -1,0 +1,37 @@
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    /* You can adjust the height as needed */    
+    padding: 20px;
+}
+
+.photo-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.gallery{
+    margin-top: 100px;
+}
+.gallery-header{
+    display: flex;
+    justify-content: center;
+}
+.gallery-header h1{
+           color: white;
+}
+@media only screen and (max-width:900px) {
+.photo-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 200px);
+    row-gap: 20px;
+}
+}

@@ -1,0 +1,64 @@
+.eventcard img{
+   height: 300px;
+   width: 250px;
+}
+/*body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}*/
+.events-container{
+    display: flex;
+    
+}
+.eventcard{
+    height: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 300px;
+    width: 250px;
+    padding:6px;
+    margin-top:-300px ;
+    box-sizing: border-box;
+    position: absolute;
+    background:rgb(27, 27, 27,.5);
+    color: white;
+    opacity: 0;
+    
+}
+.intro h3{
+    margin: 5px;
+    font-size: 40px;
+}
+.intro p{
+    font-size: 15px;
+    margin: 20px;
+}
+.eventcard:hover{
+    cursor: pointer;
+}
+.intro:hover{
+    opacity: 1;
+}
+.eventsection{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eventsection h1{
+    color: white;
+    font-weight:bolder
+}
+
+@media only screen and (max-width: 1000px) {
+    .events-container {
+            display: flex;
+            flex-direction: column;    
+        }
+}
