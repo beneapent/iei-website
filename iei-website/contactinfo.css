@@ -1,12 +1,12 @@
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.25fr 1fr;
-    height: 180px;
+    height: 150px;
     margin-top: 100px;
 }
 
 .contact {
-    background-color: #4A4E55;
+    background-color: #5658dd;
     display: flex;
     flex-direction: column;
     color: aliceblue;
@@ -15,28 +15,20 @@
     padding-top: 20px;
     align-items: center;
     border-radius: 3rem;
+    line-height: 5px;
+    text-align: center;
 }
 .contact h2{
     text-decoration: underline;
-    font-size: x-large;
+    font-size: large;
 }
 .contact-info {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-weight: 900;
     margin-top: 20px;
     column-gap: 35px;
     line-height: 30px;
-}
-@media only screen and (max-width:850px) {
-    .contact-info{
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-    }
-    .contact-container{
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-    
 }
