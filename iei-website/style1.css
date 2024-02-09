@@ -58,7 +58,7 @@
         height: 1300vh;
     }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
     .aboutus-container {
         flex-direction: column;
         align-items: center;

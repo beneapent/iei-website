@@ -160,6 +160,7 @@ header{
 }
 
 footer{
+    
     display: flex;
     z-index: -900;
     width: 100%;

@@ -28,10 +28,18 @@
 .gallery-header h1{
            color: white;
 }
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:600px) {
 .photo-grid{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(6, 270px);
     row-gap: 20px;
 }
 }
+/*@media only screen  and (min-width:600px)and (max-width:1000px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 350px);
+        width: 100%;
+        row-gap: 20px;
+    }
+}*/
