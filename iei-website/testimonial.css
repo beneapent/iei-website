@@ -40,6 +40,7 @@
     font-size: 12px;
     max-width: 250px;
     line-height: 15px;
+    text-align: left;
 }
 .slide-info h4{
     margin-top: 20px;
