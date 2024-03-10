@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="flipcard.css">
 </head>
 <body>
     <div class="container">
@@ -326,35 +327,47 @@
             <div>
               <h1>Our Recent Events</h1>
             </div>
+
+            <div class="flipcard">
+              <div class="flip-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="eventsimages/matlab.png" alt="" srcset="">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Ignite your coding journey and unlock the potential of MATLAB with hands-on exploration and expert insights where
+                            participants will delve into the fundamentals of this powerful programming language, unraveling its capabilities for
+                            scientific computing and data analysis.</p>
+                        </div>
+                    </div>
+                </div>
             
-            <div class="events-container">
-              <div class="eventcard">
-                <img src="eventsimages/matlab.png" alt="" srcset="">
-                <div class="intro">
-                  
-                  <p>Ignite your coding journey and unlock the potential of MATLAB with hands-on exploration and expert insights where
-                  participants will delve into the fundamentals of this powerful programming language, unraveling its capabilities for
-                  scientific computing and data analysis.</p>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="eventsimages/resume.png" alt="" srcset="">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Unlock your career potential at our Resume Making Workshop. Join us for expert guidance and personalized tips to craft a
+                            standout resume that opens doors to your dream opportunities.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="eventcard">
-                <img src="eventsimages/resume.png" alt="" srcset="">
-                <div class="intro">
-                  
-                  <p>Unlock your career potential at our Resume Making Workshop. Join us for expert guidance and personalized tips to craft a
-                  standout resume that opens doors to your dream opportunities.</p>
-                </div>
-              </div>
-              <div class="eventcard">
-                <img src="eventsimages/chatgpt.jpeg" alt="" srcset="">
-                <div class="intro">
-                 
-                  <p>Embark on a transformative journey at our Machine Learning Bootcamp featuring ChatGPT, where seasoned experts guide you
-                  through the intricacies of machine learning, culminating in hands-on sessions that empower you to harness the power of
-                  AI for real-world applications.</p>
-                </div>
-              </div>
             
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="eventsimages/chatgpt.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Embark on a transformative journey at our Machine Learning Bootcamp featuring ChatGPT, where seasoned experts guide you
+                            through the intricacies of machine learning, culminating in hands-on sessions that empower you to harness the power of
+                            AI for real-world applications.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
           </section>
           
@@ -527,33 +540,38 @@
         </section>   
         
         <footer>
-          <!--...
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
-            </div>-->
-            <ul class="social_icons" id="books">
+          <div class="row">
+            <div class="col" id="col1">
+              <li><a class="queries" href="#About">General Queries</a></li>
+              <li><a class="queries" href="#About">Technical Queries</a></li>
+            </div>
+            <div class="col" >
+              <ul class="social_icons" id="books">
                 
                 <li>
-                    <h2>Follow Us On :</h2>
+                <h2>Follow Us On :</h2>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/ieitkmce/"><i class="fa-brands fa-facebook"></i>--Facebook</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/iei_eee_tkmce/"><i class="fa-brands fa-instagram"></i>--instagram</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i>--linkedin</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@iei_eee_tkmce"><i class="fa-brands fa-youtube"></i>--youtube</a>
                 </li>
-            </ul>
-            <div class="logo2"><img src="iei.png" alt="logo" class="logo3"></div>
-            <h2 class="copy">IEI Tkmce © Copyright 2024. All Rights Reserved</h2>
+              </ul>
+            </div>
+            <div class="col" id="col2">
+              <div class="logo2">
+                <img src="iei logo.png" alt="logo" class="logo3">
+              </div>
+              <h2 class="copy">IEITkmce © Copyright 2024. All Rights Reserved</h2>
+            </div> 
+          </div> 
         </footer>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

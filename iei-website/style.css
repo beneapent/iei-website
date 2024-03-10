@@ -46,9 +46,7 @@ header{
     width: 15rem;
     height: 15rem;
     padding-top: 1rem;
-    /* background-color: #141414; */
     border-radius: 1rem;
-    /* padding: 1rem 2rem; */
 }
 
 .navbar .links{
@@ -175,30 +173,34 @@ footer{
     height: 100px;
     padding: 70px 100px;
     flex-direction: column;
+    border-top-left-radius: 125px;
 }
 
 footer .social_icons{
     position: absolute;
-    display: flex;
+    display: block;
     justify-content: center; 
     align-items: center; 
     margin: 10px 0;
     flex-wrap: wrap;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
     border-radius: 1rem;
-    border-style: solid;
-    border-color: white;
+    /* border-style: solid;
+    border-color: white; */
 
 }
 
 footer .social_icons li{
     list-style: none;
     font-size: 1.5rem;
+    padding-top: 10px;
 }
 
 footer .social_icons li a{
     font-size: 1.5rem;
     color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 10px;
 }
 
@@ -208,75 +210,56 @@ footer .social_icons li h2{
     margin: 0 10px;
 }
 
+footer .logo2 .logo3{
+    width: 15rem;
+    height: 15rem;
+    /* padding-top: rem; */
+    border-radius: 1rem;
+    margin: -50px;
+}
+footer #col1{
+    margin: 50px 0px;
+}
+#col1 a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 1.5rem;
+}
+#col1 a:hover{
+    color: darkgreen;
+}
+#col1 li{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 0px;
+}
+
 .copy{
     font-size: 0.7rem;
     opacity: 1;
+    margin: 0 0px;
 }
 
-footer .wave{
-    position: absolute;
-    z-index: -1000px;
-    top: 3180px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(wave2.png);
-    background-size: 1000px 100px;
-    background-color: rgb(26, 25, 25);
+.row{
+    width: 85%;
+    margin: -30px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between; 
 }
-
-footer .wave#wave1{
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWave 4s linear infinite;
+.col{
+    flex-basis: 25%;
+    /* padding: 10px; */
 }
-
-footer .wave#wave2{
-    z-index: 999;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWave-02 4s linear infinite;
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
 }
-
-footer .wave#wave3{
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animateWave-02 3s linear infinite;
-}
-
-footer .wave#wave4{
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animateWave-02 3s linear infinite;
-}
-
 .logo2 .logo3{
     width: 10rem;
     height: 5rem;
     padding-top: 1rem;
-}
-
-@keyframes animateWave {
-    0%{
-        background-position: 1000px;
-    }
-
-    100%{
-        background-position: 0px;
-    }
-}
-
-@keyframes animateWave-02 {
-    0%{
-        background-position: 0px;
-    }
-
-    100%{
-        background-position: 1000px;
-    }
 }
 
 /* responsive design */
@@ -300,6 +283,18 @@ footer .wave#wave4{
     .dropdown_menu{
         display: block;
     }
+    footer{
+        height: 200vh;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    #col2{
+        margin-top: 200px;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
 
 }
 
@@ -307,8 +302,5 @@ footer .wave#wave4{
     .dropdown_menu{
         left: 2rem;
         width: unset;
-    }
-    footer{
-        min-height: 100vh;
     }
 }

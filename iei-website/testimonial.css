@@ -11,7 +11,7 @@
     font-size: 25px;
 }
 
-.slide-container , .testimonial-info{
+.testimonial .slide-container , .testimonial-info{
     display: flex;
     justify-content: center;
 }
@@ -22,7 +22,7 @@
     text-align: center;
     
 }
-.slide-content{
+.testimonial .slide-content{
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -207,12 +207,12 @@
     #slide4:checked~#controls label:nth-last-child(1) {
         margin: 0;
     }
-         #slider {
+        #slider {
                     
                     width: 520px;
                     
                 }
-        .slide-content {
+        .testimonial .slide-content {
             display: flex;
             flex-direction: row;
             gap: 15px;
