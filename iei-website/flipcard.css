@@ -1,18 +1,34 @@
-.flip-card-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-
-.flip-card {
-    background-color: rgb(26, 25, 25);
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 0px 30px;
+.events-upcoming{
+    max-height: 50rem;
+    padding-top: 4rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0px 100px;
 }
+
+.eventtitle{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.container1{
+    width: calc(100% - (2 * var(--container_padding)));
+    padding: var(--container_padding);
+    margin: 150px 0;
+}
+.events-upcoming::-webkit-scrollbar {
+    display: none;
+ }
+
+.row{
+    height: 100%;
+    align-items: stretch;
+    /* margin: 0 50px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 
 .flip-card-inner {
     width: 100%;
@@ -33,7 +49,7 @@
     position: absolute;
     backface-visibility: hidden;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .flip-card-front img{
     height: 300px;
@@ -43,7 +59,7 @@
 }
 
 .flip-card-front {
-    background-color: #bbb;
+    background-color: rgb(26, 25, 25);
     color: black;
 }
 
@@ -62,28 +78,54 @@
     padding: 20px;
     margin: 20px;
 }
-/* .eventsection{
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
+.flip-card {
+    background-color: rgb(26, 25, 25);
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0px 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+/* .events-upcoming .card {
+    max-width: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+} */
+
+/* .events-upcoming .card > img{
+    max-width: 90%;
+    border-radius: 1rem;
+} */
+.events-pre-btn,
+.events-nxt-btn {
+    border: solid;
+    border-radius: 1000px;
+    display: block;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-} */
-@media only screen and (max-width: 1000px) {
-    .eventsection {
-        display: flex;
-        flex-direction: column;    
-    }
+    background: orange;
+    background-size: 100rem;
+    color: #FFD369;
+    cursor: pointer;
+    height: 22rem;
 }
-@media screen and (max-width: 850px) {
-    .flip-card-container {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-      
-    }
-    .flip-card {
-            margin-top: 100px;
-        }
-  }
+.events-pre-btn{
+    left: 2rem;    
+    transform: rotate(180deg);
+}
+
+.events-nxt-btn{
+    right: 2rem;
+}
+
+.events-pre-btn img,
+.events-nxt-btn img{
+    opacity: 0.2;
+}
+
+.events-pre-btn:hover img,
+.events-nxt-btn:hover img{
+  opacity: 1;
+}

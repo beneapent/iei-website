@@ -10,3 +10,20 @@ toggleBtn.onclick = function () {
     ? 'fa fa-xmark'
     : 'fa fa-bars'
 }
+
+///////////////////////nav btn for events /////////////////////////////////////////////
+const ourEventsContainers = [...document.querySelectorAll('.events-upcoming')];
+const eventsNxtBtn = [...document.querySelectorAll('.events-nxt-btn')];
+const eventsPreBtn = [...document.querySelectorAll('.events-pre-btn')];
+
+ourEventsContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+    eventsNxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    eventsPreBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
