@@ -1,9 +1,9 @@
 .events-upcoming{
-    max-height: 50rem;
+    max-height: 40rem;
     padding-top: 4rem;
     overflow-x: auto;
-    overflow-y: hidden;
-    margin: 0px 100px;
+    overflow-y: auto;
+    margin: 50px 100px;
 }
 
 .eventtitle{
@@ -11,8 +11,27 @@
     display: flex;
     justify-content: center;
 }
+.backbutton{
+    margin: 100px 0px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+.backbutton a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    
+}
+.backbutton:hover{
+    background-color: white;
+}
+.backbutton a:hover{
+    color: green;
+}
 .container1{
     width: calc(100% - (2 * var(--container_padding)));
+    /* height: 300px; */
     padding: var(--container_padding);
     margin: 150px 0;
 }
@@ -81,7 +100,7 @@
 .flip-card {
     background-color: rgb(26, 25, 25);
     width: 300px;
-    height: 300px;
+    height: 290px;
     perspective: 1000px;
     margin: 0px 30px;
     flex-grow: 0;
@@ -129,3 +148,4 @@
 .events-nxt-btn:hover img{
   opacity: 1;
 }
+
